@@ -50,7 +50,7 @@ body {
 }
 
 body.resume {
-  background: #F5F5F5;
+  background: #c9c9c9;
   font-family: 'Source Sans Pro', Arial, sans-serif;
 }
 
@@ -111,7 +111,7 @@ object {
 div#resume h1 {
   font-size: 2.6em;
   margin-top: -.5em;
-  padding-bottom: .5em;
+  padding-bottom: .2em;
 }
 
 div#resume h2 {
@@ -172,7 +172,7 @@ div#napa h2 {
 
 p, ul {
   font-weight: 400;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 div#southdakota p {
@@ -202,47 +202,6 @@ li.no_bullet {
   padding: 0;
 }
 
-li.location {
-  background: url('../images/location.png') no-repeat left top;
-  background-position: 99.2% .95em;
-  font-size: 1.1em;
-  padding-right: 1.8em;
-  text-decoration: none;
-  padding-top: 1em;
-  padding-bottom: .6em;
-  text-align: right;
-}
-
-li.mail {
-  background: url('../images/mail3.png') no-repeat left top;
-  background-position: 100% 0em;
-  font-size: 1.1em;
-  padding-right: 1.8em;
-  text-decoration: none;
-  padding-bottom: .6em;
-  text-align: right;
-}
-
-li.linkedin {
-  background: url('../images/linkedin2.png') no-repeat left top;
-  background-position: 100% 0em;
-  font-size: 1.1em;
-  padding-right: 1.8em;
-  text-decoration: none;
-  padding-bottom: .6em;
-  text-align: right;
-}
-
-li.github {
-  background: url('../images/github2.png') no-repeat left top;
-  background-position: 100% 0em;
-  font-size: 1.1em;
-  padding-right: 1.8em;
-  text-decoration: none;
-  padding-bottom: .6em;
-  text-align: right;
-}
-
 .a_noformat {
   text-decoration: none;
   color: black;
@@ -258,12 +217,15 @@ li.github {
   border: .125em;
   padding: 2%;
   background-color: #fff;
-  overflow: hidden /* keep div elements from floating out of the box */
+  overflow: hidden; /* keep div elements from floating out of the box */
+  text-align: center;
 }
 
 .headshot {
   /*width:18%;*/
-  float: left;
+  /*float: left;*/
+  margin: 0 auto;
+  /*margin-left: 5%;*/
   border-radius: 50%;
   overflow: hidden;
   width: 14.0625em;
@@ -271,15 +233,65 @@ li.github {
 }
 
 #infobox1 {
-  float: left;
-  width: 30%;
-  padding-left: 5%;
-  padding-top: 6%;
-}
-#infobox2 {
-  float: right;
-  width: 35%;
+  /*float: left;
+  width: 30%;*/
+  text-align: center;
+  /*
+  padding-left: 5%;*/
   padding-top: 3%;
+}
+
+#infobox2 {
+  /*float: right;
+  width: 35%;*/
+  /*padding-top: 3%;*/
+  text-align: center;
+}
+
+ul.center {
+  display: inline-block;
+  padding-left: 1.5em;
+}
+
+li.location {
+  background: url('../images/location.png') no-repeat;
+  background-position: 0.8% .95em;
+  font-size: 1.1em;
+  padding-left: 1.8em;
+  text-decoration: none;
+  padding-top: 1em;
+  padding-bottom: .6em;
+  text-align: left;
+}
+
+li.mail {
+  background: url('../images/mail3.png') no-repeat;
+  background-position: 0 0;
+  font-size: 1.1em;
+  padding-left: 1.8em;
+  text-decoration: none;
+  padding-bottom: .6em;
+  text-align: left;
+}
+
+li.linkedin {
+  background: url('../images/linkedin2.png') no-repeat;
+  background-position: 0 0;
+  font-size: 1.1em;
+  padding-left: 1.8em;
+  text-decoration: none;
+  padding-bottom: .6em;
+  text-align: left;
+}
+
+li.github {
+  background: url('../images/github2.png') no-repeat;
+  background-position: 0 0;
+  font-size: 1.1em;
+  padding-left: 1.8em;
+  text-decoration: none;
+  padding-bottom: .6em;
+  text-align: left;
 }
 
 #borderbox {
@@ -295,18 +307,19 @@ li.github {
 }
 
 #leftcolumn {
-  float: left;
-  width: 60%;
+  /*float: left;
+  width: 60%;*/
   margin-right: 2%;
   margin-bottom: 2%;
   margin-left: 2%;
 }
 
 #rightcolumn {
-  float: right;
-  width: 34%;
+  /*float: right;
+  width: 34%;*/
   margin-right: 2%;
   margin-bottom: 2%;
+  margin-left: 2%;
 }
 
 .leftborderbox {
@@ -323,7 +336,87 @@ li.github {
   border: .125em;
   padding: 3%;
   background-color: #fff;
-  margin-bottom: 6%;
+  margin-bottom: 2%;
+}
+
+@media screen and (min-width: 800px) {
+  p, ul {
+    font-size: 1em;
+  }
+  body.resume {
+    background: #F5F5F5;
+  }
+
+  div#resume h1 {
+    padding-bottom: .5em;
+  }
+
+  .headshot {
+    /*width:18%;*/
+    float: left;
+  }
+
+  #infobox1 {
+    float: left;
+    width: 30%;
+    padding-left: 5%;
+    padding-top: 6%;
+    text-align: left;
+  }
+
+  #infobox2 {
+    padding-top: 3%;
+    float: right;
+    width: 35%;
+  }
+
+  ul.center {
+    display: block;
+    padding-left: 0;
+  }
+
+  li.location {
+    background-position: 99.2% .95em;
+    padding-left: 0;
+    padding-right: 1.8em;
+    text-align: right;
+  }
+
+  li.mail {
+    background-position: 100% 0em;
+    padding-left: 0;
+    padding-right: 1.8em;
+    text-align: right;
+  }
+
+  li.linkedin {
+    background-position: 100% 0em;
+    padding-left: 0;
+    padding-right: 1.8em;
+    text-align: right;
+  }
+
+  li.github {
+    background-position: 100% 0em;
+    padding-left: 0;
+    padding-right: 1.8em;
+    text-align: right;
+  }
+
+  #leftcolumn {
+    float: left;
+    width: 60%;
+  }
+
+  #rightcolumn {
+    float: right;
+    width: 34%;
+    margin-left: 0;
+  }
+
+  .rightborderbox {
+    margin-bottom: 6%;
+  }
 }
 
 #southdakota {
