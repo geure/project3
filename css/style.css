@@ -1,0 +1,538 @@
+/* style1.css */
+
+nav {  
+  font-family: 'Arial', sans-serif;
+  font-size: 1em;
+  width: 100%;
+  height: 2.1em;
+  background-color: #323131;
+}  
+
+#navbar-container {
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
+nav ul {
+  padding-top: .25em;
+  display: inline-block;
+}
+
+nav ul li {
+  margin: 0;
+  float: left;
+}
+nav ul li a {
+  text-align: center;
+  display: block;
+  float: left;
+  color: white;
+  text-decoration: none;
+  overflow: hidden;
+  padding: .2em 1em 0 1em;
+  vertical-align: middle;
+  font-weight: 200;
+} 
+
+nav ul li a:hover { 
+  color: silver;
+}  
+
+#navbar-container #onpage a {
+  color: silver;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body.resume {
+  background: #F5F5F5;
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+}
+
+body.sd {
+  background: #959796 url("../images/gray-wood.jpg");
+  font-family: 'Play', sans-serif;
+  line-height: 1.25;
+}
+
+body.nap {
+  background: #F7F5F0;
+  min-width: 620px;
+  font-family: 'Kalam', serif;
+  color: #4C3A27;
+  list-style: none;
+  line-height: 1.25;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.napa-container {
+  width: 1280px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+div,
+img,
+embed,
+object {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+div#southdakota video {
+  max-width: 40%;
+  height: auto;
+  -webkit-box-shadow: 0 .1875em .375em rgba(0,0,0,.5); 
+  -moz-box-shadow: 0 .1875em .375em rgba(0,0,0,.5); 
+  border: .625em outset #ddd;
+  border-color: black;
+}
+
+div#napa,
+img,
+embed,
+object {
+  vertical-align: top;
+  padding-bottom: .22em;
+}
+
+
+div#resume h1 {
+  font-size: 2.6em;
+  margin-top: -.5em;
+  padding-bottom: .5em;
+}
+
+div#resume h2 {
+  font-size: 1.8em;
+  color: #5C5858;
+  margin-top: 0;
+  padding-bottom: .3em;
+}
+
+h3 {
+  font-size: 1.4em;
+  font-weight: 800;
+  padding-top: .3em;
+  padding-bottom: .3em;
+}
+
+h4 {
+  font-size: 1.2em;
+  padding-top: .3em;
+  padding-bottom: .3em;
+}
+
+div#southdakota h1 {
+  font-size: 2.6em;
+  font-weight: 600;
+  padding-top: 2em;
+  padding-bottom: .5em;
+  text-align: center
+}
+
+div#southdakota h2 {
+  font-size: 1.8em;
+  font-weight: 600;
+  padding-top: 1.5em;
+  padding-bottom: .2em;
+  text-align: center
+}
+
+div#napa h1 { 
+  font-size: 2.6em;
+  font-weight: 600;
+  padding-top: 2em;
+  padding-bottom: .5em;
+  text-align: center
+}
+
+div#napa h2 {
+  font-size: 2.2em;
+  font-weight: 600;
+  text-align: center
+
+}
+
+.dim {
+  color: #C0C0C0;
+  font-size: .7em;
+}
+
+p, ul {
+  font-weight: 400;
+  font-size: 1em;
+}
+
+div#southdakota p {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+div#napa p {
+  font-size: 1.2em;
+  font-weight: 300;
+  padding-bottom: 1em;
+}
+
+ul.bullet {
+  padding-left: 1em;
+  padding-top: .2em;
+  padding-bottom: .2em;
+}
+
+li.bullet {
+  padding: 0;
+  list-style-type: square;
+  margin: 0 0 .5em .5em;
+}
+
+li.no_bullet {
+  padding: 0;
+}
+
+li.location {
+  background: url('../images/location.png') no-repeat left top;
+  background-position: 99.2% .95em;
+  font-size: 1.1em;
+  padding-right: 1.8em;
+  text-decoration: none;
+  padding-top: 1em;
+  padding-bottom: .6em;
+  text-align: right;
+}
+
+li.mail {
+  background: url('../images/mail3.png') no-repeat left top;
+  background-position: 100% 0em;
+  font-size: 1.1em;
+  padding-right: 1.8em;
+  text-decoration: none;
+  padding-bottom: .6em;
+  text-align: right;
+}
+
+li.linkedin {
+  background: url('../images/linkedin2.png') no-repeat left top;
+  background-position: 100% 0em;
+  font-size: 1.1em;
+  padding-right: 1.8em;
+  text-decoration: none;
+  padding-bottom: .6em;
+  text-align: right;
+}
+
+li.github {
+  background: url('../images/github2.png') no-repeat left top;
+  background-position: 100% 0em;
+  font-size: 1.1em;
+  padding-right: 1.8em;
+  text-decoration: none;
+  padding-bottom: .6em;
+  text-align: right;
+}
+
+.a_noformat {
+  text-decoration: none;
+  color: black;
+}
+
+#infobox {
+  box-sizing: border-box;
+  box-shadow: 0 0 .0625em 0 rgba(0, 0, 0, .15), 0 .125em .1875em 0 rgba(0, 0, 0, .2);
+  margin-top: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  margin-left: 2%;
+  border: .125em;
+  padding: 2%;
+  background-color: #fff;
+  overflow: hidden /* keep div elements from floating out of the box */
+}
+
+.headshot {
+  /*width:18%;*/
+  float: left;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 14.0625em;
+  height: 14.0625em;
+}
+
+#infobox1 {
+  float: left;
+  width: 30%;
+  padding-left: 5%;
+  padding-top: 6%;
+}
+#infobox2 {
+  float: right;
+  width: 35%;
+  padding-top: 3%;
+}
+
+#borderbox {
+  box-sizing: border-box;
+  box-shadow: 0 0 .0625em 0 rgba(0, 0, 0, .15), 0 .125em .1875em 0 rgba(0, 0, 0, .2);
+  margin-top: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  margin-left: 2%;
+  border: .125em;
+  padding: 2%;
+  background-color: #fff;
+}
+
+#leftcolumn {
+  float: left;
+  width: 60%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  margin-left: 2%;
+}
+
+#rightcolumn {
+  float: right;
+  width: 34%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+
+.leftborderbox {
+  box-sizing: border-box;
+  box-shadow: 0 0 .0625em 0 rgba(0, 0, 0, .15), 0 .125em .1875em 0 rgba(0, 0, 0, .2);
+  border: .125em;
+  padding: 3%;
+  background-color: #fff;
+}
+
+.rightborderbox {
+  box-sizing: border-box;
+  box-shadow: 0 0 .0625em 0 rgba(0, 0, 0, .15), 0 .125em .1875em 0 rgba(0, 0, 0, .2);
+  border: .125em;
+  padding: 3%;
+  background-color: #fff;
+  margin-bottom: 6%;
+}
+
+#southdakota {
+  width: 93%; margin: 7% auto;
+}
+
+div#southdakota .map {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3em;
+  width: 60%;
+  height: auto;
+  border: .125em solid #625F5F;
+  -webkit-box-shadow: 0 .1875em .375em rgba(0,0,0,.25); 
+  -moz-box-shadow: 0 .1875em .375em rgba(0,0,0,.25); 
+}
+
+div#southdakota .center { 
+}
+
+div#southdakota .row { 
+  padding-top: 3em;
+  padding-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.clear {
+  clear: both;
+}
+
+
+div#southdakota ul.polaroids {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#southdakota ul.polaroids li {
+  margin-left: auto;
+    margin-right: auto;
+  display: inline;
+  padding-left: 0;
+}
+
+div#southdakota ul.polaroids a { 
+  background: #fff; 
+  display: inline; 
+  float: left; 
+  margin: 0 0 1.6875em 1.875em;
+  width: auto; 
+  padding: .625em .625em .9375em; 
+  text-align: center; 
+  font-family: "Marker Felt", cursive; 
+  text-decoration: none; 
+  color: #333; 
+  font-size: 1.125em; 
+  -webkit-box-shadow: 0 .1875em .375em rgba(0,0,0,.25); 
+  -moz-box-shadow: 0 .1875em .375em rgba(0,0,0,.25); 
+  -webkit-transform: rotate(-2deg); 
+  -webkit-transition: 
+  -webkit-transform .15s linear; 
+  -moz-transform: rotate(-2deg); 
+}
+
+div#southdakota ul.polaroids img { 
+  margin: 0 auto;
+  display: block; 
+  width: 18.75em; 
+  margin-bottom: .75em 
+}
+
+div#southdakota ul.polaroids a:after { 
+  content: attr(title); 
+}
+    
+div#southdakota ul.polaroids li:nth-child(even) a { 
+  -webkit-transform: rotate(2deg);  
+  -moz-transform: rotate(2deg); 
+}
+
+div#southdakota ul.polaroids li:nth-child(3n) a { 
+  -webkit-transform: none; 
+  position: relative; top: -.3125em;  
+  -moz-transform: none; 
+}
+
+div#southdakota ul.polaroids li:nth-child(5n) a { 
+  -webkit-transform: rotate(5deg); 
+  position: relative; right: .3125em;  
+  -moz-transform: rotate(5deg); 
+}
+
+div#southdakota ul.polaroids li:nth-child(8n) a 
+{ position: relative; 
+  right: .3125em; 
+  top: .5em; 
+}
+
+div#southdakota ul.polaroids li:nth-child(11n) a { 
+  position: relative; 
+  left: -.3125em; 
+  top: .3125em; 
+}
+    
+div#southdakota ul.polaroids li.messy a {
+  margin-top: -25em;
+  position: relative;
+  left: 10em
+}
+
+div#southdakota ul.polaroids li a:hover { 
+  -webkit-transform: scale(1.25); 
+  -moz-transform: scale(1.25); 
+  -webkit-box-shadow: 0 .1875em .375em rgba(0,0,0,.5); 
+  -moz-box-shadow: 0 .1875em .375em rgba(0,0,0,.5); 
+  position: relative; 
+  z-index: 5; 
+}
+
+div#napa .map {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5em;
+  width: 60%;
+  height: auto;
+  border: .0625em solid #4C3A27;
+  padding-bottom: 0;
+}
+
+div#napa div.row {
+  float: left;
+  vertical-align: top;
+  padding-top: 0;
+  padding-bottom: 3em;
+}
+
+div#napa .row:after {
+  content: "";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+div#napa .row figure {
+  text-align: center;
+  display:inline-block;
+  margin:0 1.25em;
+  padding-top: 0;
+  padding-bottom: 1em;
+}
+
+div#napa .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+div#napa .section1 {
+  margin-left: 0em;
+  padding-left: 3em;
+  padding-right: 2em;
+}
+
+div#napa .section3 {
+  margin-left: 0em;
+  padding-left: 1em;
+  padding-right: .5em;
+}
+
+div#napa ul {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+div#napa li.wineglass {
+  background: url('../images/wineglass.png') no-repeat left top;
+  font-size: 1.2em;
+  padding-left: 1.8em;
+  padding-top: .1em;
+  padding-bottom: .1em;
+  margin-left: 0;
+}
+
+div#napa li.wineglass-fav {
+  background: url('../images/wineglass.png') no-repeat left top;
+  list-style-type: circle;
+  direction: rtl;
+  list-style-position: inside;
+  font-size: 1.2em;
+  padding-left: 1.8em;
+  padding-top: .1em;
+  padding-bottom: .1em;
+  margin-left: 0;
+}
+
+div#napa li.nowineglass {
+  list-style-type: circle;
+  font-size: 1.2em;
+  padding-left: .3em;
+  padding-top: .1em;
+  padding-bottom: .1em;
+  margin-left: 1.5em;
+}
+
+div.clear {
+  clear: both;
+}
