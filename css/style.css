@@ -107,29 +107,22 @@ object {
   padding-bottom: .22em;
 }
 
-
 div#resume h1 {
-  font-size: 2.6em;
+  font-size: 2em;
   margin-top: -.5em;
   padding-bottom: .2em;
 }
 
 div#resume h2 {
-  font-size: 1.8em;
+  font-size: 1.5em;
   color: #5C5858;
   margin-top: 0;
   padding-bottom: .3em;
 }
 
-h3 {
-  font-size: 1.4em;
-  font-weight: 800;
-  padding-top: .3em;
-  padding-bottom: .3em;
-}
-
-h4 {
+div#resume h3 {
   font-size: 1.2em;
+  font-weight: 800;
   padding-top: .3em;
   padding-bottom: .3em;
 }
@@ -222,10 +215,7 @@ li.no_bullet {
 }
 
 .headshot {
-  /*width:18%;*/
-  /*float: left;*/
   margin: 0 auto;
-  /*margin-left: 5%;*/
   border-radius: 50%;
   overflow: hidden;
   width: 14.0625em;
@@ -233,18 +223,11 @@ li.no_bullet {
 }
 
 #infobox1 {
-  /*float: left;
-  width: 30%;*/
   text-align: center;
-  /*
-  padding-left: 5%;*/
   padding-top: 3%;
 }
 
 #infobox2 {
-  /*float: right;
-  width: 35%;*/
-  /*padding-top: 3%;*/
   text-align: center;
 }
 
@@ -348,7 +331,22 @@ li.github {
   }
 
   div#resume h1 {
-    padding-bottom: .5em;
+    font-size: 2.4em;
+    padding-bottom: .35em;
+  }
+
+  div#resume h2 {
+    font-size: 1.6em;
+    color: #5C5858;
+    margin-top: 0;
+    padding-bottom: .3em;
+  }
+
+  div#resume h3 {
+    font-size: 1.2em;
+    font-weight: 800;
+    padding-top: .3em;
+    padding-bottom: .3em;
   }
 
   .headshot {
@@ -360,7 +358,7 @@ li.github {
     float: left;
     width: 30%;
     padding-left: 5%;
-    padding-top: 6%;
+    padding-top: 7%;
     text-align: left;
   }
 
@@ -416,6 +414,32 @@ li.github {
 
   .rightborderbox {
     margin-bottom: 6%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+    #resume {
+    max-width: 1260px;
+    }
+
+  div#resume h1 {
+    font-size: 2.6em;
+    padding-bottom: .5em;
+  }
+
+  div#resume h2 {
+    font-size: 1.8em;
+  }
+
+  div#resume h3 {
+    font-size: 1.4em;
+  }
+
+  p, ul {
+    font-size: 1em;
+  }
+  body.resume {
+    background: #E7E7E7;
   }
 }
 
