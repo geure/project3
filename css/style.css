@@ -50,7 +50,7 @@ body {
 }
 
 body.resume {
-  background: #c9c9c9;
+  background: #545454;
   font-family: 'Source Sans Pro', Arial, sans-serif;
 }
 
@@ -327,7 +327,7 @@ li.github {
     font-size: 1em;
   }
   body.resume {
-    background: #F5F5F5;
+    background: #C9C9C9;
   }
 
   div#resume h1 {
@@ -422,6 +422,10 @@ li.github {
     max-width: 1260px;
     }
 
+  body.resume {
+    background: #E7E7E7;
+  }
+  
   div#resume h1 {
     font-size: 2.6em;
     padding-bottom: .5em;
@@ -437,9 +441,6 @@ li.github {
 
   p, ul {
     font-size: 1em;
-  }
-  body.resume {
-    background: #E7E7E7;
   }
 }
 
