@@ -12,6 +12,7 @@
   var bear = {lat: 43.9753738, lng: -103.2990829};
   var redshirt = {lat: 43.45, lng: -102.9087548};
   var map;
+  var camper = 'images/camper.png';
 
   function initMap() {
     map = new google.maps.Map(
@@ -29,6 +30,7 @@
       animation: google.maps.Animation.BOUNCE,
       position: badLands, 
       map: map, 
+      icon: camper,
       title: 'Badlands Campground'
     });
     var marker = new google.maps.Marker({
@@ -71,6 +73,7 @@
       animation: google.maps.Animation.BOUNCE,
       position: rafter, 
       map: map, 
+      icon: camper,
       title: 'Rafter J Bar Ranch'
     });
       var marker = new google.maps.Marker({
