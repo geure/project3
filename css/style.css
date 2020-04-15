@@ -1,5 +1,27 @@
 /* style1.css */
 
+html.map {
+  height: 96%;
+  margin: 0;
+  padding: 0;
+}
+
+
+#wrapper {
+  width: 850px;
+  height: 600px;
+  background-color: #c00;
+  margin:0 auto;
+  overflow: hidden;
+}
+
+#canvas {
+  width: 700px;
+  height: 500px;
+  background-color: #ccc;
+  margin: 30px auto;
+}
+
 nav {  
   font-family: 'Arial', sans-serif;
   font-size: 1em;
@@ -43,14 +65,25 @@ nav ul li a:hover {
   color: silver;
 }
 
-body {
+#map {
+  height: 100%;
+}
+
+body.map {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html body {
+  height: 100%;
   margin: 0;
   padding: 0;
   border: 0;
 }
 
 body.resume {
-  background: #545454;
+  background: #323131;
   font-family: 'Source Sans Pro', Arial, sans-serif;
 }
 
@@ -425,7 +458,7 @@ li.github {
   body.resume {
     background: #E7E7E7;
   }
-  
+
   div#resume h1 {
     font-size: 2.6em;
     padding-bottom: .5em;
