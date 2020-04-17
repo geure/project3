@@ -1,3 +1,4 @@
+
 var locations = [
   {lat: 43.7433, lng: -101.9484},
   {lat: 43.7527996, lng: -101.9473715},
@@ -9,14 +10,7 @@ var locations = [
   {lat: 43.5683355, lng: -103.4976503},
   {lat: 43.8791025, lng: -103.4612554},
   {lat: 43.7586383, lng: -103.4401333},
-  {lat: 43.9753738, lng: -103.2990829},
-  {lat: 37.8089797, lng: -122.4124823},
-  {lat: 37.8199286, lng: -122.4804438},
-  {lat: 38.2228469, lng: -122.4622922},
-  {lat: 38.2511732, lng: -122.3492724},
-  {lat: 38.610975, lng: -122.8899415},
-  {lat: 38.1740642, lng: -122.4527422},
-  {lat: 38.488982, lng: -122.450328}
+  {lat: 43.9753738, lng: -103.2990829}
 ];
 
 var longNames = [
@@ -30,34 +24,30 @@ var longNames = [
   'Wind Cave National Park',
   'Mount Rushmore National Memorial',
   'Custer State Park',
-  'Bear Country, USA',
-  'Fog Harbor Fish House',
-  'Golden Gate Bridge',
-  'Sonoma House',
-  'Cuvaison',
-  'The Flight Deck',
-  'Rams Gate',
-  'V. Sattui'
+  'Bear Country, USA'
 ];
 
-var redshirt = {lat: 41.2227041, lng: -112.0427138};
+var redshirt = {lat: 43.45, lng: -102.9087548};
 var map;
 var camper = 'images/camper.png';
-var house = 'images/house.png';
-var wine = 'images/winebottle.png';
 var markers = [];
 
 function initMap() {
   map = new google.maps.Map(
     document.getElementById('map'), {
     center: redshirt,
-    zoom: 6,
+    zoom: 9.1,
     scaleControl: true,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     mapTypeId: google.maps.MapTypeId.TERRAIN,
     mapTypeControlOptions: {
       position: google.maps.ControlPosition.BOTTOM_CENTER
-    }
+    }/*,
+      mapTypeControl: true,
+          mapTypeControlOptions: {
+            style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+            mapTypeIds: ['roadmap', 'terrain']
+          }*/
   });
 
   clearMarkers();
@@ -72,25 +62,8 @@ function initMap() {
         position: position,
         map: map,
         animation: google.maps.Animation.BOUNCE,
-        icon: camper,
-        title: name
+        icon: camper
         }))}
-      else if (name === 'Sonoma House') {
-        markers.push(new google.maps.Marker({
-        position: position,
-        map: map,
-        animation: google.maps.Animation.BOUNCE,
-        icon: house,
-        title: name
-      }))}
-      else if (name === 'Cuvaison' || name === 'The Flight Deck' || name === 'Rams Gate' || name === 'V. Sattui') {
-        markers.push(new google.maps.Marker({
-        position: position,
-        map: map,
-        animation: google.maps.Animation.DROP,
-        icon: wine,
-        title: name
-      }))}  
       else {
         markers.push(new google.maps.Marker({
         position: position,
@@ -109,3 +82,22 @@ function initMap() {
   }
 
 }
+
+/* this code works
+        for (var i = 0; i < names.length; i++) {
+          var marker = new google.maps.Marker({
+            //animation: google.maps.Animation.DROP,
+            animation: google.maps.Animation.BOUNCE,
+            position: locations[i], 
+            map: map, 
+            icon: camper,
+            title: longNames[i]
+          });
+        }
+end code - this code works */
+
+
+
+
+
+
