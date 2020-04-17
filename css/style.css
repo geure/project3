@@ -6,20 +6,13 @@ html.map {
   padding: 0;
 }
 
-
-#wrapper {
-  width: 850px;
-  height: 600px;
-  background-color: #c00;
-  margin:0 auto;
-  overflow: hidden;
+.slideshow {
+  max-width: 550px;
+  margin: 0 auto;
 }
 
-#canvas {
-  width: 700px;
-  height: 500px;
-  background-color: #ccc;
-  margin: 30px auto;
+.bx-wrapper img {
+  margin: 0 auto;
 }
 
 nav {  
